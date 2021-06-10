@@ -1,0 +1,4 @@
+Jinja2==3.0.1
+pydantic==1.8.2
+PyGithub==1.55
+python-dotenv==0.15.0

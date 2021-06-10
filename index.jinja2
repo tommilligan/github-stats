@@ -1,0 +1,40 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+  <script>
+    $(document).ready( function () {
+        $('#user_stats').DataTable();
+    } );
+  </script>
+</head>
+<body>
+  <table id="user_stats" class="display">
+    <thead>
+      <tr>
+        <th>login</th>
+        <th>created_at</th>
+        <th>followers</th>
+        <th>following</th>
+        <th>name</th>
+        <th>public_gists</th>
+        <th>public_repos</th>
+        <th>starred</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for item in items %}
+      <tr>
+         <td>{{item.login}}</td>
+         <td>{{item.created_at}}</td>
+         <td>{{item.followers}}</td>
+         <td>{{item.following}}</td>
+         <td>{{item.name}}</td>
+         <td>{{item.public_gists}}</td>
+         <td>{{item.public_repos}}</td>
+         <td>{{item.starred}}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</body>
