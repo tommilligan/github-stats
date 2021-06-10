@@ -1,0 +1,40 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+  <script>
+    $(document).ready( function () {
+        $('#user_stats').DataTable();
+    } );
+  </script>
+</head>
+<body>
+  <table id="user_stats" class="display">
+    <thead>
+      <tr>
+        <th>login</th>
+        <th>created_at</th>
+        <th>followers</th>
+        <th>following</th>
+        <th>name</th>
+        <th>public_gists</th>
+        <th>public_repos</th>
+        <th>starred</th>
+      </tr>
+    </thead>
+    <tbody>
+    
+      <tr>
+         <td>tommilligan</td>
+         <td>2015-05-05 15:09:10</td>
+         <td>17</td>
+         <td>0</td>
+         <td>Tom Milligan</td>
+         <td>6</td>
+         <td>159</td>
+         <td>323</td>
+      </tr>
+    
+    </tbody>
+  </table>
+</body>
